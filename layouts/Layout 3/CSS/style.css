@@ -1,0 +1,26 @@
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+header,footer{
+	height: 100px;
+	border: 1px solid black;
+	clear: both;
+}
+
+section{
+	height: 360px;
+	border: 1px solid black;
+	float: left;
+}
+
+.thin{
+	width: 20%;
+}
+
+.wide{
+	width: 40%;
+}

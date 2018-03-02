@@ -1,0 +1,406 @@
+/* 
+Project Name: Facebook
+Client: Leon Noel
+Author: Lilly Percival
+Developer @RC in Boston
+*/
+
+
+/******************************************
+/* SETUP                   
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right; 
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left; 
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES                   
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 16px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+body{
+	background-color: rgb(234, 235, 239);
+}
+
+header{
+	height: 60px;
+	background-color: rgb(66, 105, 170);
+	width: 110%;
+	position: relative;
+	top: -10px;
+	left: -8px;
+}
+
+/*Middle Column Section of page*/                                                                                                                                                                                                                                                                                                                                                                                                                                           
+section{
+	width: 55%;
+	float: left;
+}
+
+
+/* Like, Comment, Share, # values above comment shell*/
+section > p,h3,h4,span{
+	margin: 20px;
+}
+
+
+aside > ul,li{
+	margin: 15px;
+}
+
+header > input{
+	float:left;
+}
+
+a{
+	text-decoration: none;
+}
+
+li{
+	list-style: none;
+}
+
+.search{
+	width: 35%;
+	position: relative;
+	top: 10px;
+}
+
+/*Icons at top right of header*/
+.headIcons > img{
+	float: right;
+	margin-right: 2%;
+}
+
+.help,.globe,.messages,.user,
+.home,.leon{
+	float: right;
+	margin-left: 2%;
+}
+
+
+.help,.globe,.messages,.user,
+.home{
+	margin-top: 1px;
+	width: 50px;
+	height: 40px;
+}
+
+.leon{
+	width:5%;
+	height: 40px;
+	margin-top: 2px;
+}
+
+.leonText{
+	color:white;
+	font-weight: bold;
+}
+
+
+.botLinks > span{
+	float:left;
+	margin-left: 2px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.panel{
+	width: 20%;
+	float: left;
+	background-color: rgb(234, 235, 239);
+}
+
+.panelName > span{
+	margin-left: -1px;
+	position: relative;
+	top: -8px;
+}
+
+.panel > ul > li{
+	text-align: left;
+	margin-left: -30px;
+	margin-bottom: 2px;
+	list-style: none;
+}
+
+.panel > ul > li > span{
+	margin-left: -3px;
+}
+
+.newsFeed{
+	background-color: rgb(246,247,249);
+	width:200%;
+	margin-left: -55px;
+	padding-left: 25px;
+	padding-top: 0;
+	padding-bottom: 0;
+	list-style: none;
+}
+
+
+.newsIcon{
+	margin-left: -15px;
+}
+
+.news{
+	margin-left: -4px;
+	position: relative;
+	top: -5px;
+}
+
+.poke{
+	width: 100%;
+}
+
+.poke > section{
+	float:right;
+	width: 55%;
+}
+
+.poke > img{
+	width:40%;
+	padding-top: 20px;
+	margin-left: 20px;
+}
+
+.likeBar{
+	height: 35px;
+	width: 100%;
+}
+
+.likesIcon{
+	background-color: rgb(234, 235, 239);
+	width: 100%;
+	height: 40px;
+}
+.likesIcon > p{
+	position: relative;
+	top: -15px;
+}
+
+.view{
+	position: relative;
+	top: 10px;
+}
+
+.main{
+	width:50%;
+	float: left;
+	background-color: rgb(255, 255, 255);
+}
+
+
+.ellison,.santilli,.evans,.cullen,.leonC{
+	display: inline-block;
+	width: 60px;
+	height: auto;
+}
+
+
+.c1,.c2,.c3{
+	position: relative;
+	left: 70px;
+	top: -5px;
+	margin-top: -5px;
+}
+
+.trending{  /*Can't figure out how to align text and icons in trending block. Display In-line/In-Line Block did not work...*/
+	width: 28%;
+	margin-top: 18px;
+	margin-bottom: 18px;
+	margin-left: 15px;
+	background-color: rgb(255, 255, 255);
+	/*height: 500px;*/
+}
+
+
+.trending-header {
+	width: 100%;
+	padding: 10px;
+}
+
+.trending-header h3 {
+    float: left;
+    width: 40%;
+    margin: 0;
+}
+
+.trending-header ul {
+	float: right;
+	width: 60%;
+	margin: 0;
+}
+
+.trending-header ul li{
+	width: 18%;
+	margin: 0;
+	padding: 0;
+	top: 0;
+}
+
+
+
+/*Icons next to TRENDING header*/
+.trendIcons > li{
+	float: right;
+	margin-top: 0;
+	margin-left: -7px;
+	list-style: none;
+	position: relative;
+	top:-30px;	
+}
+
+.topic{
+	width: 100%;
+}
+
+
+.tarrow{
+	position: relative;
+	right: 50px;
+	top: 55px;
+}
+
+.trendTopics{
+	margin-top: 2px;
+	margin-bottom: -40px;
+	list-style: none;
+	line-height: 22px;
+	position: relative;
+	top: -40px;
+	width: 100%;
+}
+
+
+.sink{
+	position: relative;
+	top: 550px;
+}
+
+.friendReqs{
+	width: 28%;
+	margin-top: 1px;
+	margin-bottom: 20px;
+	margin-left: 15px;
+	background-color: rgb(255, 255, 255);
+}
+
+
+/*facebook logo*/
+.logo{
+	width: 50px;
+	height: auto;
+	float: left;
+	position: relative;
+	top: 10px;
+}
+
+
+
+/*comment box shell*/
+.shell{ 
+	width: 100%;
+	height: 500px;
+	background-color: rgb(246, 247, 249);
+}
+
+.commentBox > li > a,span{
+	position: relative;
+	top: -10px;
+}
+
+.commentBox > li > span{
+	position: relative;
+	left: -20px;
+}
+
+.commentBox > .comments > img{
+	margin-top: 5px;
+}
+
+.emptyBlock{
+	float: right;
+	height: 30px;
+	width: 28%;
+	margin-right: 1%;
+	background-color: white;
+}
+
+.languageBlock{	
+	float: right;
+	width: 28%;
+	height: 80px;
+	margin-top: 30px;
+	margin-right: 10px;
+	background-color: white;
+}
+
+.languageBlock > ul{
+		width: 100%;
+		margin-left: -9%;
+}
+
+.languageBlock > ul > li{
+	list-style: none;
+	float: left;
+	margin: 1%;
+	margin-left: 2%;
+}
+
+.languageBlock > .plus{
+	float: right;
+	width: 10%;
+	position: relative;
+	bottom: 25px;
+	right: 10px;
+}
+
+.plusSign{
+	height: 35px;
+	width: 120%;
+}
+
+.languageBlock > ul > li > a{
+	list-style: none;
+	text-decoration: none;
+}

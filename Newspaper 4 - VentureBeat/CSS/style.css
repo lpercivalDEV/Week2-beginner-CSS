@@ -1,0 +1,131 @@
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+body{
+	background-color: rgb(0,0,0);
+
+}
+
+.navbar{
+	height: 50px;
+	margin:0;
+	background-color: rgb(35,31,32);
+	float: left;
+	width: 100%;
+	
+}
+
+ul > li{
+	float:left;
+	text-decoration: none;
+	padding-left: 10px;
+	margin-left: 50px;
+	list-style-type: none;
+	margin-bottom: 20px;
+}
+
+ul > li > a{
+	color: white; 
+	text-decoration: none;
+}
+
+.logo{
+	height: 50px;
+	width: 50px;
+	margin-top: -45px;
+	padding-top: 0;
+}
+
+.search{
+	height: 30px;
+	width: 30px;
+	clear: both;
+}
+
+.pao{
+	height: 400px;
+	width:100%;
+	margin-top: -2px;
+}
+
+.paoBanner{
+	background-color: rgba(255,255,255,0.8);	
+	float:left;
+	width: 50%;
+	position: relative;
+	bottom: 150px;
+	left: 130px;
+	padding: 8px;
+}
+
+section > a > h2{
+	text-decoration: none;
+	color: black;
+}
+
+.subs{
+	background-color: white;
+	float:left;
+	width: 60%;
+	position: relative;
+	bottom: 100px;
+}
+
+.subs > img{
+	float: left;
+	padding: 20px;
+	margin-left: 110px;
+	height: 190px;
+	width: 225px;
+}
+
+.subsBlock{
+	background-color: white;
+	width: 100%;
+	height: 300px;
+	margin-top: -5px;
+}
+
+aside{
+	margin-left: 175px;
+	font-size: small;
+}
+
+.regs{
+	clear:both;
+	margin-left: 110px;
+	position: relative;
+	bottom: 80px;
+	width: 80%;
+}
+
+.regs > img{
+	float:left;
+	height: 200px;
+	width: 190px;
+	margin-left: 20px;
+	position: relative;
+	top: 10px;
+	padding-right: 8px; 
+	
+}
+
+.regs > aside{
+	margin-left: 230px;
+}
